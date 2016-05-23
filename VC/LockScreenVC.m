@@ -22,25 +22,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-   
     self.automaticallyAdjustsScrollViewInsets=NO;
-    
-    [self action_EditDigitButtons:self.arr_DigitButtons];
-    
-    [self action_EditPasscodeViews:self.arr_CircleViews];
-    
-    // Setting back Ground color clear
-    [self.otl_DigitSubview setBackgroundColor:[UIColor clearColor]];
-    [self.otl_PassCodeCircles setBackgroundColor:[UIColor clearColor]];
-    [self.btn_Delete setBackgroundColor:[UIColor clearColor]];
-    
-    
     
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Initial Setup
+-(void) initialSetup{
+    
+    [self action_EditDigitButtons:self.arr_DigitButtons];
+    [self action_EditPasscodeViews:self.arr_CircleViews];
+    
+    // Setting back Ground color clear
+    [self.otl_DigitSubview setBackgroundColor:[UIColor clearColor]];
+    [self.otl_PassCodeCircles setBackgroundColor:[UIColor clearColor]];
+    [self.btn_Delete setBackgroundColor:[UIColor clearColor]];
 }
 
 
